@@ -22,7 +22,7 @@ module ShtRails
     end
 
     def template_base_path
-      @template_base_path ||= Rails.root.join("app", "templates")
+      @template_base_path ||= Rails.root.join("app", "assets", "javascripts", "app", "templates")
     end
 
     def template_extension
@@ -38,7 +38,7 @@ module ShtRails
     end
 
     def helper_path
-      @helper_path ||= 'templates/helpers.js'
+      @helper_path ||= 'assets/javascripts/app/templates/helpers.js'
     end
 
     def dependencies
